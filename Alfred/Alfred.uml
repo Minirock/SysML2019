@@ -43,6 +43,11 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_0TkTUONpEeiSXKLxC9IEwA" name="Requirement16">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_6kIScONpEeiSXKLxC9IEwA" name="Capteur"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_UUO7UO5eEeicMbzvAnsakQ" name="Me"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6KdOsO5gEeicMbzvAnsakQ" name="Lire la consommation d'électricité" classifierBehavior="_JwE4sO5hEeicMbzvAnsakQ">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JwE4sO5hEeicMbzvAnsakQ" name="Interaction1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FnYlAO5hEeicMbzvAnsakQ"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
