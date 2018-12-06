@@ -47,14 +47,17 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6KdOsO5gEeicMbzvAnsakQ" name="Lire la consommation d'électricité" classifierBehavior="_JwE4sO5hEeicMbzvAnsakQ">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JwE4sO5hEeicMbzvAnsakQ" name="Interaction1">
         <lifeline xmi:type="uml:Lifeline" xmi:id="_kjFWQO5jEeiuCY0D6VfdWA" name="Utilisateur" coveredBy="_j2mOQO5kEeiuCY0D6VfdWA _j3dw8O5kEeiuCY0D6VfdWA"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_nWMXEO5jEeiuCY0D6VfdWA" name="Systeme" coveredBy="_j2m1UO5kEeiuCY0D6VfdWA _j3dJ4O5kEeiuCY0D6VfdWA _j3UnAO5kEeiuCY0D6VfdWA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_nWMXEO5jEeiuCY0D6VfdWA" name="Systeme" coveredBy="_j2m1UO5kEeiuCY0D6VfdWA _qYzxoPkmEei-QN92HNxaDg _qY0YsPkmEei-QN92HNxaDg _j3dJ4O5kEeiuCY0D6VfdWA _j3UnAO5kEeiuCY0D6VfdWA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j2mOQO5kEeiuCY0D6VfdWA" name="Message3SendEvent" covered="_kjFWQO5jEeiuCY0D6VfdWA" message="_j2e5gO5kEeiuCY0D6VfdWA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j2m1UO5kEeiuCY0D6VfdWA" name="Message3ReceiveEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_j2e5gO5kEeiuCY0D6VfdWA"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_j3UnAO5kEeiuCY0D6VfdWA" name="BehaviorExecutionSpecification6" covered="_nWMXEO5jEeiuCY0D6VfdWA" finish="_j3dJ4O5kEeiuCY0D6VfdWA" start="_j2m1UO5kEeiuCY0D6VfdWA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qYzxoPkmEei-QN92HNxaDg" name="Message10SendEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_qYx8cPkmEei-QN92HNxaDg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qY0YsPkmEei-QN92HNxaDg" name="Message10ReceiveEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_qYx8cPkmEei-QN92HNxaDg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j3dJ4O5kEeiuCY0D6VfdWA" name="Message8SendEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_j3ci0O5kEeiuCY0D6VfdWA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j3dw8O5kEeiuCY0D6VfdWA" name="Message8ReceiveEvent" covered="_kjFWQO5jEeiuCY0D6VfdWA" message="_j3ci0O5kEeiuCY0D6VfdWA"/>
-        <message xmi:type="uml:Message" xmi:id="_j2e5gO5kEeiuCY0D6VfdWA" name="Message3" receiveEvent="_j2m1UO5kEeiuCY0D6VfdWA" sendEvent="_j2mOQO5kEeiuCY0D6VfdWA"/>
-        <message xmi:type="uml:Message" xmi:id="_j3ci0O5kEeiuCY0D6VfdWA" name="Message8" messageSort="reply" receiveEvent="_j3dw8O5kEeiuCY0D6VfdWA" sendEvent="_j3dJ4O5kEeiuCY0D6VfdWA"/>
+        <message xmi:type="uml:Message" xmi:id="_j2e5gO5kEeiuCY0D6VfdWA" name="Consulter la consommation d'électricité" receiveEvent="_j2m1UO5kEeiuCY0D6VfdWA" sendEvent="_j2mOQO5kEeiuCY0D6VfdWA"/>
+        <message xmi:type="uml:Message" xmi:id="_j3ci0O5kEeiuCY0D6VfdWA" name="&quot;Vous avez consommé : &quot; +conso  +&quot;kW&quot;" messageSort="reply" receiveEvent="_j3dw8O5kEeiuCY0D6VfdWA" sendEvent="_j3dJ4O5kEeiuCY0D6VfdWA"/>
+        <message xmi:type="uml:Message" xmi:id="_qYx8cPkmEei-QN92HNxaDg" name="conso = getConsommation()" receiveEvent="_qY0YsPkmEei-QN92HNxaDg" sendEvent="_qYzxoPkmEei-QN92HNxaDg"/>
       </ownedBehavior>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_FnYlAO5hEeicMbzvAnsakQ"/>
