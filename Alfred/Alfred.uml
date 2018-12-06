@@ -55,12 +55,81 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qY0YsPkmEei-QN92HNxaDg" name="Message10ReceiveEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_qYx8cPkmEei-QN92HNxaDg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j3dJ4O5kEeiuCY0D6VfdWA" name="Message8SendEvent" covered="_nWMXEO5jEeiuCY0D6VfdWA" message="_j3ci0O5kEeiuCY0D6VfdWA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_j3dw8O5kEeiuCY0D6VfdWA" name="Message8ReceiveEvent" covered="_kjFWQO5jEeiuCY0D6VfdWA" message="_j3ci0O5kEeiuCY0D6VfdWA"/>
-        <message xmi:type="uml:Message" xmi:id="_j2e5gO5kEeiuCY0D6VfdWA" name="Consulter la consommation d'électricité" receiveEvent="_j2m1UO5kEeiuCY0D6VfdWA" sendEvent="_j2mOQO5kEeiuCY0D6VfdWA"/>
+        <message xmi:type="uml:Message" xmi:id="_j2e5gO5kEeiuCY0D6VfdWA" name="lireConsommation()" receiveEvent="_j2m1UO5kEeiuCY0D6VfdWA" sendEvent="_j2mOQO5kEeiuCY0D6VfdWA"/>
         <message xmi:type="uml:Message" xmi:id="_j3ci0O5kEeiuCY0D6VfdWA" name="&quot;Vous avez consommé : &quot; +conso  +&quot;kW&quot;" messageSort="reply" receiveEvent="_j3dw8O5kEeiuCY0D6VfdWA" sendEvent="_j3dJ4O5kEeiuCY0D6VfdWA"/>
         <message xmi:type="uml:Message" xmi:id="_qYx8cPkmEei-QN92HNxaDg" name="conso = getConsommation()" receiveEvent="_qY0YsPkmEei-QN92HNxaDg" sendEvent="_qYzxoPkmEei-QN92HNxaDg"/>
       </ownedBehavior>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_FnYlAO5hEeicMbzvAnsakQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2X49UPknEei-QN92HNxaDg" name="IHM" visibility="package">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_glSP0PkrEei0pKS9nUJYOA" name="lireConsommation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BOeP4PkpEei-QN92HNxaDg" name="Alfred">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PyHisvktEei0pKS9nUJYOA" name="mediateur" type="_L_HyMPktEei0pKS9nUJYOA" association="_PyG7oPktEei0pKS9nUJYOA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PyIJwPktEei0pKS9nUJYOA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PyJ-8PktEei0pKS9nUJYOA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WEBlovktEei0pKS9nUJYOA" name="ihm" type="_2X49UPknEei-QN92HNxaDg" aggregation="composite" association="_WEAXgPktEei0pKS9nUJYOA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WECMsPktEei0pKS9nUJYOA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WECMsfktEei0pKS9nUJYOA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zaJAgPksEei0pKS9nUJYOA" name="lireConsommation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_p3e-gPksEei0pKS9nUJYOA" name="CompteurElectrique"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w2CsEPksEei0pKS9nUJYOA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_2OxrUPksEei0pKS9nUJYOA" name="CompteurElectrique"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_2jc60PksEei0pKS9nUJYOA" name="Utilisateur"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_C1c38PktEei0pKS9nUJYOA" memberEnd="_C1c38_ktEei0pKS9nUJYOA _C1dfAvktEei0pKS9nUJYOA" navigableOwnedEnd="_C1c38_ktEei0pKS9nUJYOA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C1c38fktEei0pKS9nUJYOA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C1c38vktEei0pKS9nUJYOA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_C1c38_ktEei0pKS9nUJYOA" name="alfred" type="_BOeP4PkpEei-QN92HNxaDg" association="_C1c38PktEei0pKS9nUJYOA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C1dfAPktEei0pKS9nUJYOA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C1dfAfktEei0pKS9nUJYOA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_C1dfAvktEei0pKS9nUJYOA" name="utilisateur" type="_2jc60PksEei0pKS9nUJYOA" association="_C1c38PktEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L_HyMPktEei0pKS9nUJYOA" name="Mediateur">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jXfm0vktEei0pKS9nUJYOA" name="compteurelectrique" type="_2OxrUPksEei0pKS9nUJYOA" association="_jXeYsPktEei0pKS9nUJYOA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jXgN4PktEei0pKS9nUJYOA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jXgN4fktEei0pKS9nUJYOA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PyG7oPktEei0pKS9nUJYOA" memberEnd="_PyHisvktEei0pKS9nUJYOA _PyLNEPktEei0pKS9nUJYOA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PyHisPktEei0pKS9nUJYOA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PyHisfktEei0pKS9nUJYOA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PyLNEPktEei0pKS9nUJYOA" name="alfred" type="_BOeP4PkpEei-QN92HNxaDg" association="_PyG7oPktEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WEAXgPktEei0pKS9nUJYOA" memberEnd="_WEBlovktEei0pKS9nUJYOA _WECzwPktEei0pKS9nUJYOA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WEBloPktEei0pKS9nUJYOA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WEBlofktEei0pKS9nUJYOA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WECzwPktEei0pKS9nUJYOA" name="alfred" type="_BOeP4PkpEei-QN92HNxaDg" association="_WEAXgPktEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bF7ZQPktEei0pKS9nUJYOA" memberEnd="_bF8AUvktEei0pKS9nUJYOA _bF8nYvktEei0pKS9nUJYOA" navigableOwnedEnd="_bF8AUvktEei0pKS9nUJYOA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bF8AUPktEei0pKS9nUJYOA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bF8AUfktEei0pKS9nUJYOA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bF8AUvktEei0pKS9nUJYOA" name="ihm" type="_2X49UPknEei-QN92HNxaDg" association="_bF7ZQPktEei0pKS9nUJYOA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bF8nYPktEei0pKS9nUJYOA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bF8nYfktEei0pKS9nUJYOA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bF8nYvktEei0pKS9nUJYOA" name="utilisateur" type="_2jc60PksEei0pKS9nUJYOA" association="_bF7ZQPktEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jXeYsPktEei0pKS9nUJYOA" memberEnd="_jXfm0vktEei0pKS9nUJYOA _jXgN4vktEei0pKS9nUJYOA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jXfm0PktEei0pKS9nUJYOA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jXfm0fktEei0pKS9nUJYOA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jXgN4vktEei0pKS9nUJYOA" name="mediateur" type="_L_HyMPktEei0pKS9nUJYOA" association="_jXeYsPktEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0LAAQPktEei0pKS9nUJYOA" name="Alfred">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KleCMPkuEei0pKS9nUJYOA" type="_O-kwcPkuEei0pKS9nUJYOA" aggregation="composite" association="_O-ssQPkuEei0pKS9nUJYOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O-kwcPkuEei0pKS9nUJYOA" name="ControllerIHM"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O-ssQPkuEei0pKS9nUJYOA" memberEnd="_KleCMPkuEei0pKS9nUJYOA _O-t6YPkuEei0pKS9nUJYOA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O-t6YPkuEei0pKS9nUJYOA" type="_0LAAQPktEei0pKS9nUJYOA" association="_O-ssQPkuEei0pKS9nUJYOA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -129,4 +198,9 @@
   <Blocks:Block xmi:id="_ymROkONqEeiSXKLxC9IEwA" base_Class="_ymOLQONqEeiSXKLxC9IEwA"/>
   <Blocks:Block xmi:id="_1V6EoONqEeiSXKLxC9IEwA" base_Class="_1V3oYONqEeiSXKLxC9IEwA"/>
   <Requirements:Requirement xmi:id="_cF3uUONrEeiSXKLxC9IEwA" base_Class="_cF15IONrEeiSXKLxC9IEwA" id="2" text="https://gist.github.com/jmbruel/c3c4a610f31c722313d3e3a33bdcf780#file-alfred-txt-L20"/>
+  <Blocks:Block xmi:id="_2YD8cPknEei-QN92HNxaDg" base_Class="_2X49UPknEei-QN92HNxaDg"/>
+  <Blocks:Block xmi:id="_BOkWgPkpEei-QN92HNxaDg" base_Class="_BOeP4PkpEei-QN92HNxaDg"/>
+  <Blocks:Block xmi:id="_L_UmgPktEei0pKS9nUJYOA" base_Class="_L_HyMPktEei0pKS9nUJYOA"/>
+  <Blocks:Block xmi:id="_0LERsPktEei0pKS9nUJYOA" base_Class="_0LAAQPktEei0pKS9nUJYOA"/>
+  <Blocks:Block xmi:id="_O-oa0PkuEei0pKS9nUJYOA" base_Class="_O-kwcPkuEei0pKS9nUJYOA"/>
 </xmi:XMI>
