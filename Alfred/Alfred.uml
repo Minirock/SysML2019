@@ -130,6 +130,28 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_O-ssQPkuEei0pKS9nUJYOA" memberEnd="_KleCMPkuEei0pKS9nUJYOA _O-t6YPkuEei0pKS9nUJYOA">
       <ownedEnd xmi:type="uml:Property" xmi:id="_O-t6YPkuEei0pKS9nUJYOA" type="_0LAAQPktEei0pKS9nUJYOA" association="_O-ssQPkuEei0pKS9nUJYOA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_w8uh0P7dEeivD8wQj2JbUw" name="Refine40" client="_pUlrwP7dEeivD8wQj2JbUw" supplier="_J6us8P7dEeivD8wQj2JbUw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XOwSUP7eEeivD8wQj2JbUw" name="Services">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_J6us8P7dEeivD8wQj2JbUw" name="Sante">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_pUlrwP7dEeivD8wQj2JbUw" name="MesureTemperature"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_NZqAAP7fEeivD8wQj2JbUw" name="MesureHumidite"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KaXPQP7dEeivD8wQj2JbUw" name="Previsions">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UOqI8P7fEeivD8wQj2JbUw" name="QualiteAir"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_f_DN0P7fEeivD8wQj2JbUw" name="ProductionElectrique"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KzkZcP7dEeivD8wQj2JbUw" name="Alertes">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_thk-sP7fEeivD8wQj2JbUw" name="SignalSonore"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_3-mXMP7fEeivD8wQj2JbUw" name="AfficherConseil"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_LIrGwP7dEeivD8wQj2JbUw" name="Graphiques">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HuCEgP7gEeivD8wQj2JbUw" name="LireProductionElectrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_DywsUP7hEeivD8wQj2JbUw" name="LireQuantiteEauChaude"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_r-71UP7hEeivD8wQj2JbUw" name="AfficherKWH"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_3FPbYP7hEeivD8wQj2JbUw" name="Refine38" client="_HuCEgP7gEeivD8wQj2JbUw" supplier="_r-71UP7hEeivD8wQj2JbUw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_4_dsYP7hEeivD8wQj2JbUw" name="Refine12" client="_r-71UP7hEeivD8wQj2JbUw" supplier="_HuCEgP7gEeivD8wQj2JbUw"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -203,4 +225,21 @@
   <Blocks:Block xmi:id="_L_UmgPktEei0pKS9nUJYOA" base_Class="_L_HyMPktEei0pKS9nUJYOA"/>
   <Blocks:Block xmi:id="_0LERsPktEei0pKS9nUJYOA" base_Class="_0LAAQPktEei0pKS9nUJYOA"/>
   <Blocks:Block xmi:id="_O-oa0PkuEei0pKS9nUJYOA" base_Class="_O-kwcPkuEei0pKS9nUJYOA"/>
+  <Requirements:Requirement xmi:id="_J6-kkP7dEeivD8wQj2JbUw" base_Class="_J6us8P7dEeivD8wQj2JbUw" id="2" text="Alfred doit pouvoir restituer les mesures provenant de plusieurs grandeurs physiques pour indiquer le niveau de santé de la maison"/>
+  <Requirements:Requirement xmi:id="_Kacu0P7dEeivD8wQj2JbUw" base_Class="_KaXPQP7dEeivD8wQj2JbUw" id="3" text="Alfred doit pouvoir afficher des prévisions"/>
+  <Requirements:Requirement xmi:id="_KzvYkP7dEeivD8wQj2JbUw" base_Class="_KzkZcP7dEeivD8wQj2JbUw" id="4" text="Alfred doit pouvoir afficher des conseils pour bénéficier au mieux des capacités passives de la maison"/>
+  <Requirements:Requirement xmi:id="_LIuxIP7dEeivD8wQj2JbUw" base_Class="_LIrGwP7dEeivD8wQj2JbUw" id="5" text="Alfred doit pouvoir afficher des indicateurs détaillés sur différents domaine"/>
+  <Requirements:Requirement xmi:id="_pUryYP7dEeivD8wQj2JbUw" base_Class="_pUlrwP7dEeivD8wQj2JbUw" id="6" text="Mesurer la température"/>
+  <Requirements:Refine xmi:id="_w80ocP7dEeivD8wQj2JbUw" base_DirectedRelationship="_w8uh0P7dEeivD8wQj2JbUw" base_Abstraction="_w8uh0P7dEeivD8wQj2JbUw"/>
+  <Requirements:Requirement xmi:id="_XOzVoP7eEeivD8wQj2JbUw" base_Class="_XOwSUP7eEeivD8wQj2JbUw" id="1" text="Alfred doit pouvoir rendre plusieurs services"/>
+  <Requirements:Requirement xmi:id="_NZxUwP7fEeivD8wQj2JbUw" base_Class="_NZqAAP7fEeivD8wQj2JbUw" id="7" text="Mesurer l'humidité "/>
+  <Requirements:Requirement xmi:id="_UOwPkP7fEeivD8wQj2JbUw" base_Class="_UOqI8P7fEeivD8wQj2JbUw" id="8" text="Alfred doit pouvoir prévoir la qualité de l'air"/>
+  <Requirements:Requirement xmi:id="_f_FqEP7fEeivD8wQj2JbUw" base_Class="_f_DN0P7fEeivD8wQj2JbUw" id="9" text="Alfred doit pouvoir anticiper la production électrique de la maison"/>
+  <Requirements:Requirement xmi:id="_thmz4P7fEeivD8wQj2JbUw" base_Class="_thk-sP7fEeivD8wQj2JbUw" id="10" text="Alfred doit pouvoir lancer une alarme"/>
+  <Requirements:Requirement xmi:id="_3-oMYP7fEeivD8wQj2JbUw" base_Class="_3-mXMP7fEeivD8wQj2JbUw" id="11" text="Alfred doit pouvoir afficher des messages de conseils"/>
+  <Requirements:Requirement xmi:id="_HuEgwP7gEeivD8wQj2JbUw" base_Class="_HuCEgP7gEeivD8wQj2JbUw" id="12" text="Alfred doit pouvoir afficher la production électrique courante de la maison"/>
+  <Requirements:Requirement xmi:id="_DyyhgP7hEeivD8wQj2JbUw" base_Class="_DywsUP7hEeivD8wQj2JbUw" id="13" text="Alfred doit pouvoir afficher la quantité d'eau chaude en nombre de douche"/>
+  <Requirements:Requirement xmi:id="_r--4oP7hEeivD8wQj2JbUw" base_Class="_r-71UP7hEeivD8wQj2JbUw" id="14" text="Afficher en KW/H"/>
+  <Requirements:Refine xmi:id="_3FRQkP7hEeivD8wQj2JbUw" base_DirectedRelationship="_3FPbYP7hEeivD8wQj2JbUw" base_Abstraction="_3FPbYP7hEeivD8wQj2JbUw"/>
+  <Requirements:Refine xmi:id="_4_fhkP7hEeivD8wQj2JbUw" base_DirectedRelationship="_4_dsYP7hEeivD8wQj2JbUw" base_Abstraction="_4_dsYP7hEeivD8wQj2JbUw"/>
 </xmi:XMI>
