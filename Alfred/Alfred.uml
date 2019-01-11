@@ -153,25 +153,25 @@
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_3FPbYP7hEeivD8wQj2JbUw" name="Refine38" client="_HuCEgP7gEeivD8wQj2JbUw" supplier="_r-71UP7hEeivD8wQj2JbUw"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_4_dsYP7hEeivD8wQj2JbUw" name="Refine12" client="_r-71UP7hEeivD8wQj2JbUw" supplier="_HuCEgP7gEeivD8wQj2JbUw"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_4SQEMBWiEempB-12kANxcw" name="Interaction40">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_YxCqwBWjEempB-12kANxcw" name="Utilisateur" coveredBy="_zJ6b8BWjEempB-12kANxcw _t95DABWjEempB-12kANxcw _zKqC0BWjEempB-12kANxcw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_dMOcoBWjEempB-12kANxcw" name="IHM" coveredBy="_zJ7DABWjEempB-12kANxcw _3AkkcBWjEempB-12kANxcw _t95qEBWjEempB-12kANxcw _3BB3cRWjEempB-12kANxcw _zKpbwBWjEempB-12kANxcw _zKaLMBWjEempB-12kANxcw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_j8KfYBWjEempB-12kANxcw" name="Compteur électrique" coveredBy="_3AlLgBWjEempB-12kANxcw _3BB3cBWjEempB-12kANxcw _3A-NEBWjEempB-12kANxcw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_YxCqwBWjEempB-12kANxcw" name="Utilisateur" coveredBy="_zJ6b8BWjEempB-12kANxcw _zKqC0BWjEempB-12kANxcw _t95DABWjEempB-12kANxcw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_dMOcoBWjEempB-12kANxcw" name="IHM" coveredBy="_zJ7DABWjEempB-12kANxcw _3AkkcBWjEempB-12kANxcw _3BB3cRWjEempB-12kANxcw _zKpbwBWjEempB-12kANxcw _t95qEBWjEempB-12kANxcw _zKaLMBWjEempB-12kANxcw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_j8KfYBWjEempB-12kANxcw" name="Mediateur" coveredBy="_3AlLgBWjEempB-12kANxcw _3BB3cBWjEempB-12kANxcw _3A-NEBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zJ6b8BWjEempB-12kANxcw" name="Message7SendEvent" covered="_YxCqwBWjEempB-12kANxcw" message="_zJ3_sBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zJ7DABWjEempB-12kANxcw" name="Message7ReceiveEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_zJ3_sBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_zKaLMBWjEempB-12kANxcw" name="BehaviorExecutionSpecification10" covered="_dMOcoBWjEempB-12kANxcw" finish="_zKpbwBWjEempB-12kANxcw" start="_zJ7DABWjEempB-12kANxcw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t95DABWjEempB-12kANxcw" name="Message4SendEvent" covered="_YxCqwBWjEempB-12kANxcw" message="_t92mwBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AkkcBWjEempB-12kANxcw" name="Message14SendEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_3Aj9YBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AlLgBWjEempB-12kANxcw" name="Message14ReceiveEvent" covered="_j8KfYBWjEempB-12kANxcw" message="_3Aj9YBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3A-NEBWjEempB-12kANxcw" name="BehaviorExecutionSpecification17" covered="_j8KfYBWjEempB-12kANxcw" finish="_3BB3cBWjEempB-12kANxcw" start="_3AlLgBWjEempB-12kANxcw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t95qEBWjEempB-12kANxcw" name="Message4ReceiveEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_t92mwBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3BB3cBWjEempB-12kANxcw" name="Message19SendEvent" covered="_j8KfYBWjEempB-12kANxcw" message="_3BBQYBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3BB3cRWjEempB-12kANxcw" name="Message19ReceiveEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_3BBQYBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zKpbwBWjEempB-12kANxcw" name="Message12SendEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_zKo0sBWjEempB-12kANxcw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zKqC0BWjEempB-12kANxcw" name="Message12ReceiveEvent" covered="_YxCqwBWjEempB-12kANxcw" message="_zKo0sBWjEempB-12kANxcw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t95DABWjEempB-12kANxcw" name="Message4SendEvent" covered="_YxCqwBWjEempB-12kANxcw" message="_t92mwBWjEempB-12kANxcw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t95qEBWjEempB-12kANxcw" name="Message4ReceiveEvent" covered="_dMOcoBWjEempB-12kANxcw" message="_t92mwBWjEempB-12kANxcw"/>
       <message xmi:type="uml:Message" xmi:id="_t92mwBWjEempB-12kANxcw" name="Message4" messageSort="asynchCall" receiveEvent="_t95qEBWjEempB-12kANxcw" sendEvent="_t95DABWjEempB-12kANxcw"/>
       <message xmi:type="uml:Message" xmi:id="_zJ3_sBWjEempB-12kANxcw" name="lireConsommation()" receiveEvent="_zJ7DABWjEempB-12kANxcw" sendEvent="_zJ6b8BWjEempB-12kANxcw"/>
       <message xmi:type="uml:Message" xmi:id="_zKo0sBWjEempB-12kANxcw" name="&quot;Vous avez consommé : &quot; + conso + &quot;kW&quot;" messageSort="reply" receiveEvent="_zKqC0BWjEempB-12kANxcw" sendEvent="_zKpbwBWjEempB-12kANxcw"/>
-      <message xmi:type="uml:Message" xmi:id="_3Aj9YBWjEempB-12kANxcw" name="getConsommation()" receiveEvent="_3AlLgBWjEempB-12kANxcw" sendEvent="_3AkkcBWjEempB-12kANxcw"/>
+      <message xmi:type="uml:Message" xmi:id="_3Aj9YBWjEempB-12kANxcw" name="lireConsommation()" receiveEvent="_3AlLgBWjEempB-12kANxcw" sendEvent="_3AkkcBWjEempB-12kANxcw"/>
       <message xmi:type="uml:Message" xmi:id="_3BBQYBWjEempB-12kANxcw" name="return conso" messageSort="reply" receiveEvent="_3BB3cRWjEempB-12kANxcw" sendEvent="_3BB3cBWjEempB-12kANxcw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
