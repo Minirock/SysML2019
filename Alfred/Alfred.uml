@@ -145,7 +145,7 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_3-mXMP7fEeivD8wQj2JbUw" name="AfficherConseil"/>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_LIrGwP7dEeivD8wQj2JbUw" name="Graphiques">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_HuCEgP7gEeivD8wQj2JbUw" name="LireProductionElectrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HuCEgP7gEeivD8wQj2JbUw" name="LireConsommationElectrique"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_DywsUP7hEeivD8wQj2JbUw" name="LireQuantiteEauChaude"/>
       </nestedClassifier>
     </packagedElement>
@@ -259,7 +259,7 @@
   <Requirements:Requirement xmi:id="_f_FqEP7fEeivD8wQj2JbUw" base_Class="_f_DN0P7fEeivD8wQj2JbUw" id="9" text="Alfred doit pouvoir anticiper la production électrique de la maison"/>
   <Requirements:Requirement xmi:id="_thmz4P7fEeivD8wQj2JbUw" base_Class="_thk-sP7fEeivD8wQj2JbUw" id="10" text="Alfred doit pouvoir lancer une alarme"/>
   <Requirements:Requirement xmi:id="_3-oMYP7fEeivD8wQj2JbUw" base_Class="_3-mXMP7fEeivD8wQj2JbUw" id="11" text="Alfred doit pouvoir afficher des messages de conseils"/>
-  <Requirements:Requirement xmi:id="_HuEgwP7gEeivD8wQj2JbUw" base_Class="_HuCEgP7gEeivD8wQj2JbUw" id="12" text="Alfred doit pouvoir afficher la production électrique courante de la maison"/>
+  <Requirements:Requirement xmi:id="_HuEgwP7gEeivD8wQj2JbUw" base_Class="_HuCEgP7gEeivD8wQj2JbUw" id="12" text="Alfred doit pouvoir afficher la consommation électrique courante de la maison"/>
   <Requirements:Requirement xmi:id="_DyyhgP7hEeivD8wQj2JbUw" base_Class="_DywsUP7hEeivD8wQj2JbUw" id="13" text="Alfred doit pouvoir afficher la quantité d'eau chaude en nombre de douche"/>
   <Requirements:Requirement xmi:id="_r--4oP7hEeivD8wQj2JbUw" base_Class="_r-71UP7hEeivD8wQj2JbUw" id="14" text="Afficher en KW/H"/>
   <Requirements:Refine xmi:id="_3FRQkP7hEeivD8wQj2JbUw" base_DirectedRelationship="_3FPbYP7hEeivD8wQj2JbUw" base_Abstraction="_3FPbYP7hEeivD8wQj2JbUw"/>
